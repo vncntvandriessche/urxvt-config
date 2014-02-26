@@ -1,0 +1,20 @@
+#!/bin/bash
+
+###############
+## Constants ##
+###############
+
+this_dir="$(pwd)";
+git_project='git@github.com:vncntvandriessche/urxvt-config.git';
+configuration_file='configuration';
+xresource="$HOME/.Xresources";
+
+##########
+## Main ##
+##########
+
+grep -E "^#include \"$this_dir/${configuration_file}\"" $xresource &> /dev/null && echo 'Allready installed.' || {
+        echo -e "\n\n! Includes: ${git_project}.\n#include \"$this_dir/${configuration_file}\"" >> $xresource &&
+        xrdb $xresource &&
+        echo "Added configuration to: [$xresource]";
+};
