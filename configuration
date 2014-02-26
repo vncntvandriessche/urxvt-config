@@ -1,0 +1,38 @@
+!!!!!!!!!!!!!!
+!! Behavior !!
+!!!!!!!!!!!!!!
+
+! Set as login shell.
+URxvt*loginShell: true
+
+! Transparency.
+URxvt*transparent: false
+
+! Scrollback buffer lines - 65535 is max for most machines.
+URxvt*saveLines: 25000
+
+
+!!!!!!!!!!!!!!!!
+!! Appearance !!
+!!!!!!!!!!!!!!!!
+
+! Font color.
+! URxvt*foreground: !0DAF38 ! Awesome green
+URxvt*foreground: White
+
+! Background color.
+URxvt*background: !121212
+
+! Font.
+URxvt*font: xft:Monospace:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:Monospace:bold:pixelsize=14:antialias=true:hinting=true
+
+! Decrease font spacing. Less disturbing.
+URxvt.letterSpace: -1
+
+! Replace blue folder colors with a lighter shade for clarity.
+URxvt*color4: RoyalBlue
+URxvt*color12: RoyalBlue
+
+! Scrollbar.
+URxvt*scrollBar: false
