@@ -21,7 +21,7 @@ URxvt*saveLines: 25000
 URxvt*foreground: White
 
 ! Background color.
-URxvt*background: !121212
+URxvt*background: #121212
 
 ! Font.
 URxvt*font: xft:Monospace:pixelsize=14:antialias=true:hinting=true
